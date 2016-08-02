@@ -9,13 +9,12 @@
 
 (add-hook 'c++-mode-hook 'my-c++-mode-hook)
 
-
 ;; CUDA style
 (add-hook 'cuda-mode-hook 'my-c++-mode-hook)
 
 ;; Move-text
 (global-set-key [M-up] 'move-text-up)
-(global-set-key [M-shift-down] 'move-text-down)
+(global-set-key [M-down] 'move-text-down)
 
 ;; Compile command
 (global-set-key (kbd "C-c c") 'compile)
@@ -27,6 +26,7 @@
 (add-to-list 'auto-mode-alist '("\\.cc\\'" . c++-mode))
 (add-to-list 'auto-mode-alist '("\\.cpp\\'" . c++-mode))
 (add-to-list 'auto-mode-alist '("\\.cxx\\'" . c++-mode))
+(add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
 
 
 
